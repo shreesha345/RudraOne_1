@@ -5,7 +5,9 @@
 RudraOne represents India's first unified, AI-driven emergency response platform, modernizing the 112 emergency system with advanced technology integration. The platform addresses critical gaps in India's emergency infrastructure through intelligent automation and real-time coordination.
 
 **Live Demo:** [https://rudraone.vercel.app/](https://rudraone.vercel.app/)
+
 **Video Demo:** [https://youtu.be/IkyAFmvcztU](https://youtu.be/IkyAFmvcztU)
+
 *Note: Live demo may experience limitations due to free-tier API constraints*
 
 ---

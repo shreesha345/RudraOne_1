@@ -4,8 +4,8 @@
 
 RudraOne represents India's first unified, AI-driven emergency response platform, modernizing the 112 emergency system with advanced technology integration. The platform addresses critical gaps in India's emergency infrastructure through intelligent automation and real-time coordination.
 
-**Live Demo:** [rudraone.vercel.app](https://rudraone.vercel.app/)  
-**Video Demo:** [Watch on YouTube](https://youtu.be/IkyAFmvcztU)  
+**Live Demo:** [https://rudraone.vercel.app/](https://rudraone.vercel.app/)
+**Video Demo:** [https://youtu.be/IkyAFmvcztU](https://youtu.be/IkyAFmvcztU)
 *Note: Live demo may experience limitations due to free-tier API constraints*
 
 ---
@@ -28,69 +28,76 @@ RudraOne represents India's first unified, AI-driven emergency response platform
 
 RudraOne consolidates all emergency services into a single interface, enabling:
 
-- **Seamless Dispatch**: Cross-agency coordination from one dashboard
-- **Reduced Response Times**: Automated triage and intelligent routing
-- **Operator Efficiency**: AI assistance reduces manual workload
-- **Quality Assurance**: Automated call scoring and performance metrics
-- **AI Analytics Assistant**: Interactive data analysis with visual insights
+* **Seamless Dispatch**: Cross-agency coordination from one dashboard
+* **Reduced Response Times**: Automated triage and intelligent routing
+* **Operator Efficiency**: AI assistance reduces manual workload
+* **Quality Assurance**: Automated call scoring and performance metrics
+* **AI Analytics Assistant**: Interactive data analysis with visual insights
 
 ---
 
 ## 🌟 Key Differentiators
 
 ### 1. **Advanced Language Processing**
-- **Real-time Translation**: 10+ Indian languages supported
-- **Speech-to-Text**: Automatic transcription using Deepgram/AssemblyAI
-- **Multi-lingual TTS**: Response generation via ElevenLabs and Sarvam AI
-- **SMS Integration**: Text-to-112 support for accessibility
+
+* **Real-time Translation**: 10+ Indian languages supported
+* **Speech-to-Text**: Automatic transcription using Deepgram / AssemblyAI
+* **Multi-lingual TTS**: Voice synthesis via ElevenLabs and Sarvam AI
+* **SMS Integration**: Text-to-112 support for accessibility
 
 ### 2. **Enhanced Situational Awareness**
-- **Live Video Streaming**: Real-time visual assessment of emergencies
-- **Photo Sharing**: Document evidence and scene conditions
-- **GPS Integration**: Precise location tracking
-- **What3Words**: Alternative addressing for hard-to-locate areas
+
+* **Live Video Streaming**: Real-time visual assessment of emergencies
+* **Photo Sharing**: Document evidence and scene conditions
+* **GPS Integration**: Precise location tracking
+* **What3Words**: Alternative addressing for hard-to-locate areas
 
 ### 3. **AI-Powered Automation**
-- **Intelligent Triage**: AI bots handle non-emergency calls
-- **Radio Transcription**: Convert radio communications to text
-- **Assistive Dispatch**: AI recommendations for resource allocation
-- **Call Scoring**: Automated quality assessment
-- **Pattern Recognition**: Identify trends and recurring issues
+
+* **Intelligent Triage**: AI bots handle non-emergency calls
+* **Radio Transcription**: Convert radio communications to text
+* **Assistive Dispatch**: AI-driven recommendations for resource allocation
+* **Call Scoring**: Automated quality assessment
+* **Pattern Recognition**: Identify trends and recurring issues
 
 ### 4. **AI-Powered Analytics Assistant**
-- **Interactive Data Analysis**: Chatbot-style interface for querying emergency data
-- **Visual Insights**: Auto-generates tables and graphs for pattern recognition
-- **Artifact Generation**: Creates shareable reports and dashboards
-- **Trend Analysis**: Identifies response time patterns, call volume trends, resource utilization
-- **Decision Support**: Helps administrators make data-driven operational decisions
+
+* **Interactive Data Analysis**: Chat-style interface for querying emergency data
+* **Visual Insights**: Auto-generated tables and graphs
+* **Artifact Generation**: Shareable reports and dashboards
+* **Trend Analysis**: Response times, call volumes, resource utilization
+* **Decision Support**: Data-driven operational intelligence
 
 ### 5. **Data Sovereignty**
-- **Flexible Deployment**: On-premise or cloud options
-- **Compliance Ready**: Meets Indian data protection requirements
-- **Secure Infrastructure**: End-to-end encryption
+
+* **Flexible Deployment**: On-premise or sovereign cloud options
+* **Compliance Ready**: Designed for Indian data protection requirements
+* **Secure Infrastructure**: End-to-end encryption
 
 ---
 
 ## 🎥 Platform Demonstration
 
-**Watch the full platform walkthrough:** [RudraOne Demo Video](https://youtu.be/IkyAFmvcztU)
+**Watch the full platform walkthrough:** [https://youtu.be/IkyAFmvcztU](https://youtu.be/IkyAFmvcztU)
 
 The video demonstrates:
-- Real-time emergency call handling with AI translation
-- Multi-agency dispatch coordination
-- Live video streaming integration
-- AI analytics assistant in action
-- Non-emergency call deflection
-- Operator dashboard features
+
+* Real-time emergency call handling with AI translation
+* Multi-agency dispatch coordination
+* Live video streaming integration
+* AI analytics assistant in action
+* Non-emergency call deflection
+* Operator dashboard features
 
 ---
 
 ## 🏗️ Technical Architecture
 
 ### Backend Stack
+
 ```
 Core Framework: FastAPI (Python 3.12+)
-AI Models: OpenAI GPT, Google Gemini, Groq AI
+AI Models: Google Gemini
 Speech Processing: Deepgram, AssemblyAI
 Voice Synthesis: ElevenLabs, Sarvam AI
 Communication: Twilio (Voice/SMS)
@@ -98,6 +105,7 @@ Development Tools: uv (dependency management), ngrok (webhooks)
 ```
 
 ### Frontend Stack
+
 ```
 Framework: React + TypeScript
 Build Tool: Vite
@@ -107,6 +115,7 @@ Package Manager: Yarn (Corepack)
 ```
 
 ### Infrastructure Pattern
+
 ```
 ┌─────────────────┐
 │   React UI      │ ← User Interface
@@ -116,25 +125,25 @@ Package Manager: Yarn (Corepack)
 │  FastAPI Server │ ← Orchestration Layer
 └────────┬────────┘
          │
-    ┌────┴─────┬─────────┬──────────┬─────────┐
-    ▼          ▼         ▼          ▼         ▼
-  OpenAI    Gemini    Deepgram  Twilio    Mapbox
-  (GPT)     (AI)      (Speech)  (Comms)   (Maps)
+    ┌────┴─────┬──────────┬─────────┬─────────┐
+    ▼          ▼          ▼         ▼         ▼
+ Gemini    Deepgram   AssemblyAI  Twilio   Mapbox
+  (AI)      (Speech)     (Speech)  (Comms)   (Maps)
 ```
 
 ---
 
 ## 📊 Comparative Analysis
 
-| Capability | RudraOne | Traditional Systems |
-|-----------|----------|-------------------|
-| **Integration** | Unified multi-agency interface | Separate systems per agency |
-| **Languages** | 10+ with real-time translation | Limited, often manual |
-| **Media Support** | Video, photos, GPS, What3Words | Voice-only communication |
-| **Automation** | AI triage, transcription, QA, analytics | Fully manual operations |
-| **Non-Emergency** | AI bot deflection | Operator handling |
-| **Deployment** | Flexible (cloud/on-prem) | Usually cloud-only |
-| **Data Control** | Sovereignty compliant | Variable |
+| Capability        | RudraOne                                | Traditional Systems |
+| ----------------- | --------------------------------------- | ------------------- |
+| **Integration**   | Unified multi-agency interface          | Separate systems    |
+| **Languages**     | 10+ with real-time translation          | Limited             |
+| **Media Support** | Video, photos, GPS, What3Words          | Voice-only          |
+| **Automation**    | AI triage, transcription, QA, analytics | Manual              |
+| **Non-Emergency** | AI bot deflection                       | Operator-handled    |
+| **Deployment**    | Cloud / On-Prem                         | Usually cloud-only  |
+| **Data Control**  | Sovereignty-compliant                   | Variable            |
 
 ---
 
@@ -142,139 +151,68 @@ Package Manager: Yarn (Corepack)
 
 ### Quick Setup (Development)
 
-**Backend (using uv):**
+**Backend**
+
 ```powershell
-# Install uv
-iwr https://astral.sh/uv/install.ps1 -UseBasicParsing | iex
-
-# Install dependencies
 uv sync
-
-# Configure environment (create .env file)
-# Add API keys for: OpenAI, Groq, Google, Twilio, 
-# AssemblyAI, Deepgram, ElevenLabs, Sarvam
-
-# Run server
 uv run python server.py
 ```
 
-**Frontend (using Yarn):**
-```powershell
-# Enable Yarn via Corepack
-corepack enable
-corepack prepare yarn@stable --activate
+**Frontend**
 
-# Install dependencies
+```powershell
 cd frontend
 yarn install
-
-# Configure environment (create frontend/.env)
-# Add: VITE_API_URL, Google API, Mapbox token
-
-# Run dev server
 yarn dev
 ```
-
-### Access Points
-- **Frontend UI**: http://localhost:5173
-- **Backend API**: http://localhost:8000
-- **API Documentation**: http://localhost:8000/docs
 
 ---
 
 ## 🔑 Required API Services
 
 ### Essential Services
-1. **AI Models**: OpenAI GPT, Google Gemini, Groq AI
+
+1. **AI Models**: Google Gemini
 2. **Speech Recognition**: Deepgram or AssemblyAI
 3. **Voice Synthesis**: ElevenLabs, Sarvam AI
 4. **Communications**: Twilio (voice/SMS)
 5. **Mapping**: Mapbox
 
-### Optional Tools
-- **ngrok**: For local webhook testing with Twilio
-
 ---
 
 ## 🎯 Use Cases
 
-### Primary Scenarios
-
-1. **Emergency Call Handling**
-   - Caller speaks in regional language
-   - AI transcribes and translates in real-time
-   - Operator dispatches appropriate service
-   - Live video provides situational context
-
-2. **Non-Emergency Deflection**
-   - AI bot screens incoming calls
-   - Handles routine inquiries automatically
-   - Escalates genuine emergencies
-   - Reduces operator workload by 30-40%
-
-3. **Multi-Agency Coordination**
-   - Fire and ambulance needed simultaneously
-   - Single interface coordinates both
-   - Shared situational awareness
-   - Faster resource mobilization
-
-4. **Quality Assurance & Analytics**
-   - Automated call scoring
-   - Performance metrics tracking
-   - Training opportunity identification
-   - Compliance monitoring
-   - **AI Analyst**: Ask questions like "Show me average response times by district" or "Generate a graph of call volumes by hour"
-   - **Interactive Insights**: Natural language queries transform into visual dashboards
+* Emergency call handling in regional languages
+* AI-based non-emergency deflection
+* Multi-agency coordination
+* Automated QA and compliance
+* Natural-language analytics queries (e.g., *“Show response times by district”*)
 
 ---
 
 ## 📈 Impact Metrics
 
-### Expected Improvements
-- **Response Time**: 25-35% reduction through automation
-- **Call Processing**: 40% faster with AI assistance
-- **Operator Efficiency**: Handle 2-3x more calls
-- **Language Coverage**: 10x more languages supported
-- **Non-Emergency Load**: 30-40% reduction
+* **Response Time**: 25–35% reduction
+* **Call Processing**: ~40% faster
+* **Operator Capacity**: 2–3× increase
+* **Language Coverage**: 10× expansion
+* **Non-Emergency Load**: 30–40% reduction
 
 ---
 
 ## 🛣️ Future Enhancements
 
-### Potential Roadmap
-1. **Predictive Analytics**: Forecast emergency hotspots
-2. **IoT Integration**: Smart city sensor integration
-3. **Drone Coordination**: Automated aerial assessment
-4. **Medical AI**: Triage assistance for ambulance dispatch
-5. **Social Media Monitoring**: Early emergency detection
-6. **Blockchain**: Immutable audit trails
-
----
-
-## 📞 Support & Resources
-
-### Technical Support
-- GitHub repository documentation
-- API documentation at `/docs` endpoint
-- Community forums (TBD)
-
-### Demo Resources
-- **Live Platform**: [rudraone.vercel.app](https://rudraone.vercel.app/)
-- **Video Walkthrough**: [YouTube Demo](https://youtu.be/IkyAFmvcztU)
-
-### Contributing
-- Open for contributions (check repository)
-- Feature requests welcome
-- Bug reports appreciated
+1. Predictive emergency hotspot analysis
+2. IoT & smart-city sensor integration
+3. Drone-based situational assessment
+4. Medical triage intelligence
+5. Social media signal monitoring
+6. Immutable audit logs
 
 ---
 
 ## 🏆 Recognition
 
-RudraOne demonstrates how modern AI and communication technologies can transform critical public infrastructure, making emergency response faster, more accessible, and more effective across India's diverse linguistic and geographic landscape.
+RudraOne demonstrates how **sovereign, policy-aligned AI systems** can modernize national emergency infrastructure—making response faster, more inclusive, and resilient across India’s linguistic and geographic diversity.
 
-**Built with:** FastAPI, React, OpenAI GPT, Google Gemini, Groq AI, Deepgram, Twilio, Mapbox, and more.
-
----
-
-*This is a development platform. Production deployment requires proper infrastructure, security hardening, and compliance verification.*
+**Built with:** FastAPI, React, Google Gemini, Deepgram, AssemblyAI, Twilio, Mapbox, ElevenLabs, Sarvam AI.
